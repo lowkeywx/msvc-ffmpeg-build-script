@@ -19,3 +19,5 @@
 	下载x264源码放到与msvc_build.sh所在目录的统计目录
 	修改SOURCE_DIR变量为x264源码目录
 	进入msvc_build.sh所在目录，并执行sh msvc_build.sh
+	
+注意: libx264.c中需要将X264_API_IMPORTS宏的值调整为0, 要不然ffmpeg默认会已动态库方式导入符号
